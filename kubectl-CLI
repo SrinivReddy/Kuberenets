@@ -11,3 +11,6 @@ kubectl get rs
 kubectl rollout status deployment/<name of deploy>
 kubelet rollout history deployment/<name of deploy>
 kubelet rollout undo deployment/<name of deploy> --to--revision=1
+kubectl autoscale deployment <name of deployment> --min=2 --max=10
+kubectl autoscale deployment <name of deployment>> --max=5 --cpu-percent=80
+ 
