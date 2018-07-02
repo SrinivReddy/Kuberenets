@@ -10,4 +10,4 @@ kubectl get deploy
 kubectl get rs
 kubectl rollout status deployment/<name of deploy>
 kubelet rollout history deployment/<name of deploy>
-kubelet rollout deployment/<name of deploy> --to--revision=1
+kubelet rollout undo deployment/<name of deploy> --to--revision=1
